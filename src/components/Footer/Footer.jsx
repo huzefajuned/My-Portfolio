@@ -4,6 +4,9 @@ import Wave from "../../img/wave.png";
 import Insta from "@iconscout/react-unicons/icons/uil-instagram";
 import Facebook from "@iconscout/react-unicons/icons/uil-facebook";
 import Gitub from "@iconscout/react-unicons/icons/uil-github";
+import Github from "../../img/github.png";
+import LinkedIn from "../../img/linkedin.png";
+import Instagram from "../../img/instagram.png";
 
 const Footer = () => {
   return (
@@ -12,9 +15,15 @@ const Footer = () => {
       <div className="f-content">
         <span>huzefaghurna@gmail.com</span>
         <div className="f-icons">
-          {/* <Insta color="white" size={"3rem"} />
-          <Facebook color="white" size={"3rem"} />
-          <Gitub color="white" size={"3rem"} /> */}
+          <a href="https://github.com/huzefajuned">
+            <img src={Github} alt="" />
+          </a>
+          <a href="https://www.linkedin.com/in/huzefa-bin-juned-3951691b2/">
+            <img src={LinkedIn} alt="" />
+          </a>
+          <a href="https://www.instagram.com/h_b_juned/">
+            <img src={Instagram} alt="" />
+          </a>
         </div>
       </div>
     </div>

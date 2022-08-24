@@ -30,8 +30,8 @@ const Intro = () => {
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
           <span>Huzefa Bin Juned</span>
           <span>
-            Frontend Developer with high level of experience in web designing
-            and development, producting the Quality work
+            Frontend Developer with intermediate level of experience in web
+            designing and development, producting the Quality work
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
@@ -54,7 +54,7 @@ const Intro = () => {
       <div className="i-right">
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
-        <img src={boy} alt=" myPIv" width='300px' />
+        <img src={boy} alt=" myPIv" width="300px" />
         {/* animation */}
         <motion.img
           initial={{ left: "-36%" }}

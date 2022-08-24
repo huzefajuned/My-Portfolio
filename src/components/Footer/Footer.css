@@ -18,11 +18,20 @@
 }
 .f-icons {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
+}
+.f-icons > a {
+  font-size: 10px;
+  /* background-color: aqua; */
+}
+.f-icons > a:hover {
+  padding: 10px;
+  /* background-color: red; */
+  color: rgb(188, 137, 26);
 }
 
-@media screen and (max-width: 480px){
-  .f-content{
-    transform: scale(.5);
+@media screen and (max-width: 480px) {
+  .f-content {
+    transform: scale(0.2);
   }
 }

@@ -4,7 +4,8 @@
   justify-content: center;
   flex-direction: column;
   height: 70vh;
-
+  margin: auto;
+  /* background-color: aqua; */
 }
 /* heading */
 .portfolio span:nth-of-type(1) {
@@ -20,21 +21,57 @@
 }
 
 /* slider */
-.portfolio .swiper{
-    overflow: visible!important;
+.portfolio .swiper {
+  overflow: visible !important;
 }
 
 .portfolio-slider {
-  margin-top: 3rem;
-  width: 100%;
+  /* margin-top: 3rem; */
+  width: 40vw;
+  margin: auto;
+  /* background-color: rgb(176, 23, 23); */
+  overflow: hidden;
+  padding: 20px;
 }
 
 .portfolio-slider .swiper-slide {
-  width: 20rem;
-}
-.portfolio img {
-  width: 19rem;
-  filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
-  border-radius: 19px;
+  /* width: 100vw; */
+  /* background-color: black; */
 }
 
+.portfolio img {
+  cursor: pointer;
+
+  width: 90%;
+  /* filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25)); */
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.portfolio img:hover {
+  background-color: rgb(198, 195, 190);
+  transform: scale(1.1);
+  background-color: violet;
+}
+@media screen and (max-width: 380px) {
+  .portfolio-slider {
+    /* background-color: aqua; */
+    width: 70vw;
+  }
+  .portfolio img {
+    width: 80%;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .portfolio img:hover {
+    border: none;
+    transform: none;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+}
